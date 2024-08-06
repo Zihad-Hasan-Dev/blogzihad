@@ -11,5 +11,10 @@ export default defineConfig({
       },
     },
   },
+  
+    build: {
+      outDir: 'public',
+    },
+  
   plugins: [react()],
 });
