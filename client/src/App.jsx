@@ -21,7 +21,7 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <Routes>
-        <Route path='https://blogzihad-api.vercel.app/' element={<Home />} />
+        <Route path='https://blogzihad-api.vercel.app' element={<Home />} />
         <Route path='https://blogzihad-api.vercel.app/about' element={<About />} />
         <Route path='https://blogzihad-api.vercel.app/sign-in' element={<SignIn />} />
         <Route path='https://blogzihad-api.vercel.app/sign-up' element={<SignUp />} />
