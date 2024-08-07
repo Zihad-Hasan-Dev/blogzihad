@@ -12,4 +12,9 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      external: ['mongoose'], // Externalize 'mongoose' to avoid bundling it
+    },
+  },
 });
