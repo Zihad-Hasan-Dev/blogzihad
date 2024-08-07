@@ -11,11 +11,11 @@ import {
 
 const router = express.Router();
 
-router.post('/create', verifyToken, createComment);
-router.get('/getPostComments/:postId', getPostComments);
-router.put('/likeComment/:commentId', verifyToken, likeComment);
-router.put('/editComment/:commentId', verifyToken, editComment);
-router.delete('/deleteComment/:commentId', verifyToken, deleteComment);
-router.get('/getcomments', verifyToken, getcomments);
+router.post('https://blogzihad.vercel.app/create', verifyToken, createComment);
+router.get('https://blogzihad.vercel.app/getPostComments/:postId', getPostComments);
+router.put('https://blogzihad.vercel.app/likeComment/:commentId', verifyToken, likeComment);
+router.put('https://blogzihad.vercel.app/editComment/:commentId', verifyToken, editComment);
+router.delete('/https://blogzihad.vercel.appdeleteComment/:commentId', verifyToken, deleteComment);
+router.get('https://blogzihad.vercel.app/getcomments', verifyToken, getcomments);
 
 export default router;

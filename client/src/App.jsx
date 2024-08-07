@@ -21,17 +21,17 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/search' element={<Search />} />
+        <Route path='https://blogzihad-api.vercel.app/' element={<Home />} />
+        <Route path='https://blogzihad-api.vercel.app/about' element={<About />} />
+        <Route path='https://blogzihad-api.vercel.app/sign-in' element={<SignIn />} />
+        <Route path='https://blogzihad-api.vercel.app/sign-up' element={<SignUp />} />
+        <Route path='https://blogzihad-api.vercel.app/search' element={<Search />} />
         <Route element={<PrivateRoute />}>
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='https://blogzihad-api.vercel.app/dashboard' element={<Dashboard />} />
         </Route>
         <Route element={<OnlyAdminPrivateRoute />}>
-          <Route path='/create-post' element={<CreatePost />} />
-          <Route path='/update-post/:postId' element={<UpdatePost />} />
+          <Route path='https://blogzihad-api.vercel.app/create-post' element={<CreatePost />} />
+          <Route path='https://blogzihad-api.vercel.app/update-post/:postId' element={<UpdatePost />} />
         </Route>
 
         <Route path='/projects' element={<Projects />} />

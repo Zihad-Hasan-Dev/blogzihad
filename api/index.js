@@ -30,10 +30,10 @@ app.listen(3000, () => {
   console.log('Server is running on port 3000!');
 });
 
-app.use('/api/user', userRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/post', postRoutes);
-app.use('/api/comment', commentRoutes);
+app.use('https://blogzihad.vercel.app/api/user', userRoutes);
+app.use('https://blogzihad.vercel.app/api/auth', authRoutes);
+app.use('https://blogzihad.vercel.app/api/post', postRoutes);
+app.use('https://blogzihad.vercel.app/api/comment', commentRoutes);
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 

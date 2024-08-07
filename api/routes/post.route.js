@@ -4,10 +4,10 @@ import { create, deletepost, getposts, updatepost } from '../controllers/post.co
 
 const router = express.Router();
 
-router.post('/create', verifyToken, create)
-router.get('/getposts', getposts)
-router.delete('/deletepost/:postId/:userId', verifyToken, deletepost)
-router.put('/updatepost/:postId/:userId', verifyToken, updatepost)
+router.post('https://blogzihad.vercel.app/create', verifyToken, create)
+router.get('https://blogzihad.vercel.app/getposts', getposts)
+router.delete('https://blogzihad.vercel.app/deletepost/:postId/:userId', verifyToken, deletepost)
+router.put('https://blogzihad.vercel.app/updatepost/:postId/:userId', verifyToken, updatepost)
 
 
 export default router;
